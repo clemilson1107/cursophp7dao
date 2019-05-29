@@ -25,13 +25,17 @@ require_once("config.php");
 
 //echo $usuario;
 
+//criando um novo usuario
+//$aluno = new Usuarios();
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("11078720");
 
-$aluno = new Usuarios();
-$aluno->setDeslogin("aluno");
-$aluno->setDessenha("11078720");
+//$aluno->insert();
 
-$aluno->insert();
+//echo $aluno;
 
-echo $aluno;
+$usuario = new Usuarios();
+$usuario->loadById(5);
+$usuario->update("Januario","%$#cl");
 
  ?>
