@@ -33,9 +33,15 @@ require_once("config.php");
 //$aluno->insert();
 
 //echo $aluno;
-
+/*
 $usuario = new Usuarios();
 $usuario->loadById(5);
 $usuario->update("Januario","%$#cl");
+*/
 
+$usuario = new Usuarios();
+$usuario->loadById(5);
+$usuario->delete();
+
+echo $usuario;
  ?>
